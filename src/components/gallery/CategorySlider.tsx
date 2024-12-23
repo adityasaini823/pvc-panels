@@ -14,6 +14,8 @@ interface CategorySliderProps {
 
 export const CategorySlider = ({ category, isActive }: CategorySliderProps) => {
   const sectionId = category.title.toLowerCase().replace(/\s+/g, '-');
+  const prevButtonClass = `${sectionId}-prev`;
+  const nextButtonClass = `${sectionId}-next`;
 
   return (
     <section
@@ -28,15 +30,17 @@ export const CategorySlider = ({ category, isActive }: CategorySliderProps) => {
         {category.title}
       </h2>
       <div className="relative">
-        {/* Custom Navigation Buttons */}
+        {/* Scoped Navigation Buttons */}
         <button
-          className="swiper-button-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-none text-white p-3 rounded-full shadow-md  transition"
+          style={{ fontSize: '4rem',justifyContent:'center' }}
+          className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-white p-3 rounded-full shadow-md transition ${prevButtonClass}`}
           aria-label="Previous slide"
         >
           &#8249;
         </button>
         <button
-          className="swiper-button-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-none text-white p-3 rounded-full shadow-md transition"
+         style={{ fontSize: '4rem', alignContent:'center'}}
+          className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-white p-3 rounded-full shadow-md transition ${nextButtonClass}`}
           aria-label="Next slide"
         >
           &#8250;
@@ -45,8 +49,8 @@ export const CategorySlider = ({ category, isActive }: CategorySliderProps) => {
         <Swiper
           modules={[Navigation, Pagination, A11y]}
           navigation={{
-            prevEl: '.swiper-button-prev',
-            nextEl: '.swiper-button-next',
+            prevEl: `.${prevButtonClass}`,
+            nextEl: `.${nextButtonClass}`,
           }}
           pagination={{
             clickable: true,
