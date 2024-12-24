@@ -5,9 +5,9 @@ export const About = () => {
     'Over 15 years of industry experience',
     'Professional installation team',
     'High-quality PVC panels',
-    'Warranty-backed installations',
     'Competitive pricing',
-    'Fast turnaround times'
+    'Fast turnaround times',
+    'Maintenance Service'
   ];
 
   return (
@@ -29,7 +29,7 @@ export const About = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">Your Trusted PVC Panel Installation Experts</h3>
               <p className="text-gray-600 mb-6">
-                With over 15 years of experience in the industry, PVC Solutions has established itself as a leading provider of high-quality PVC panel installations for commercial and residential spaces.
+                With over 3 years of experience in the industry, PVC Solutions has established itself as a leading provider of high-quality PVC panel installations for commercial and residential spaces.
               </p>
               <ul className="space-y-4">
                 {features.map((feature, index) => (

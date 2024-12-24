@@ -13,7 +13,7 @@ export const VideoSection = () => {
         <h2 className="text-4xl font-bold text-center mb-12">See Our Work in Action</h2>
         <div ref={ref} className="aspect-w-16 aspect-h-9 max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            url="https://res.cloudinary.com/dxzagjkmp/video/upload/v1734959775/pvc_wall_panels_bedroom_designs_vvmftf.mp4"
             playing={inView}
             muted={true}
             loop={true}
