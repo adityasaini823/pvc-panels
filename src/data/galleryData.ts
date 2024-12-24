@@ -10,14 +10,17 @@ export const galleryData: GalleryData = {
         url: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace'
       },
       {
-        type: 'video',
-        url: 'https://www.youtube.com/watch?v=example1',
-        thumbnail: 'https://images.unsplash.com/photo-1616486701797-0f33f61038df'
+        type: 'image',
+        url: '/images/ceiling-image-1.jpeg'
       },
       {
         type: 'image',
-        url: 'https://images.unsplash.com/photo-1616486701944-ab0a5016c881'
-      }
+        url: '/images/ceiling-image-2.webp'
+      },
+      {
+        type: 'image',
+        url: '/images/ceiling-image-3.jpg'
+      },
     ]
   },
   kitchen: {
@@ -26,13 +29,16 @@ export const galleryData: GalleryData = {
     content: [
       {
         type: 'image',
-        url: 'https://images.unsplash.com/photo-1556911220-bff31c812dba'
+        url: '/images/kitchen-image-1.jpeg'
       },
       {
-        type: 'video',
-        url: 'https://www.youtube.com/watch?v=example2',
-        thumbnail: 'https://images.unsplash.com/photo-1556912167-f556f1f39faa'
-      }
+        type: 'image',
+        url: '/images/kitchen-image-2.jpg'
+      },
+      {
+        type: 'image',
+        url: '/images/kitchen-image-3.jpg'
+      },
     ]
   },
   walls: {
@@ -44,10 +50,22 @@ export const galleryData: GalleryData = {
         url: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d'
       },
       {
-        type: 'video',
-        url: 'https://www.youtube.com/watch?v=example3',
-        thumbnail: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
-      }
+        type: 'image',
+        url: '/images/wall-image-2.webp'
+      },
+      {
+        type: 'image',
+        url: '/images/wall-image-1.webp'
+      },
+      {
+        type: 'image',
+        url: '/images/wall-image-3.jpg'
+      },
+      // {
+      //   type: 'video',
+      //   url: 'https://www.youtube.com/watch?v=example3',
+      //   thumbnail: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
+      // }
     ]
   },
   tiles: {
@@ -56,23 +74,26 @@ export const galleryData: GalleryData = {
     content: [
       {
         type: 'image',
-        url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a'
+        url: '/images/tiles-image-2.jpeg'
       },
       {
-        type: 'video',
-        url: 'https://res.cloudinary.com/dxzagjkmp/video/upload/v1734959775/pvc_wall_panels_bedroom_designs_vvmftf.mp4',
-        thumbnail: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a'
-      }
+        type: 'image',
+        url: '/images/tiles-image-3.jpeg'
+      },
+      {
+        type: 'image',
+        url: '/images/tiles-image-4.jpeg'
+      },
+       {
+        type: 'image',
+        url: '/images/tiles-image-1.webp'
+      },
     ]
   },
   'tv-units': {
     title: 'TV Units with Lighting',
     type: 'tv-units',
     content: [
-      {
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1593784991095-a205069470b6'
-      },
       {
         type: 'image',
         url: '/images/tv-unit-design-1.jpg'
@@ -87,8 +108,7 @@ export const galleryData: GalleryData = {
       },
       {
         type: 'video',
-        url: 'https://www.youtube.com/watch?v=example5',
-        thumbnail: 'https://images.unsplash.com/photo-1593784991095-a205069470b6'
+        url: 'https://res.cloudinary.com/dxzagjkmp/video/upload/v1734959775/pvc_wall_panels_bedroom_designs_vvmftf.mp4',
       }
     ]
   }
