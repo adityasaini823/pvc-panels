@@ -9,10 +9,10 @@ export const Contact = () => {
     alert(`Message Sent:\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
     emailjs
             .send(
-                'service_n9qes44', // Replace with your EmailJS Service ID
-                'template_6vnx9vs', // Replace with your EmailJS Template ID
-                formData,
-                'bK1tMjiLPkiFF3ZiX'  // Replace with your EmailJS Public Key
+              process.env.REACT_APP_EMAILJS_SERVICE_ID!,
+              process.env.REACT_APP_EMAILJS_TEMPLATE_ID!,
+              formData,
+              process.env.REACT_APP_EMAILJS_PUBLIC_KEY!  // Replace with your EmailJS Public Key
             )
             .then(
                 (result) => {
@@ -31,7 +31,7 @@ export const Contact = () => {
     email: "",
     message: "",
   });
-  const whatsappNumber = '+919034143537'; // Replace with actual WhatsApp number
+  const whatsappNumber = '+918950282826'; // Replace with actual WhatsApp number
   const whatsappMessage = encodeURIComponent('Hi, I would like to know more about your PVC panel installation services.');
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -45,7 +45,7 @@ export const Contact = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Phone className="w-6 h-6 text-blue-600 mr-4" />
-                <span>+1 234 567 890</span>
+                <span>+918950282826</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-6 h-6 text-blue-600 mr-4" />

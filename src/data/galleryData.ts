@@ -106,10 +106,10 @@ export const galleryData: GalleryData = {
         type: 'image',
         url: '/images/tv-unit-image-3.jpg'
       },
-      {
-        type: 'video',
-        url: 'https://res.cloudinary.com/dxzagjkmp/video/upload/v1734959775/pvc_wall_panels_bedroom_designs_vvmftf.mp4',
-      }
+      // {
+      //   type: 'video',
+      //   url: 'https://res.cloudinary.com/dxzagjkmp/video/upload/v1734959775/pvc_wall_panels_bedroom_designs_vvmftf.mp4',
+      // }
     ]
   }
 };
