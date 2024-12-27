@@ -26,28 +26,28 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Business Street</li>
-              <li>City, Country</li>
-              <li>+1 234 567 890</li>
-              <li>info@pvcsolutions.com</li>
+              <li>Pahalwan Chownk</li>
+              <li>Panipat, India</li>
+              <li>+91 89502 82826 </li>
+              {/* <li>info@pvcsolutions.com</li> */}
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
+              {/* <a href="#" className="text-gray-400 hover:text-white">
                 <Facebook className="w-6 h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              </a> */}
+              {/* <a href="#" className="text-gray-400 hover:text-white">
                 <Twitter className="w-6 h-6" />
-              </a>
+              </a> */}
               <a href="#" className="text-gray-400 hover:text-white">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              {/* <a href="#" className="text-gray-400 hover:text-white">
                 <Linkedin className="w-6 h-6" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

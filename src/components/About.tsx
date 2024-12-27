@@ -2,7 +2,7 @@ import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 export const About = () => {
   const features = [
-    'Over 15 years of industry experience',
+    'Over 3 years of industry experience',
     'Professional installation team',
     'High-quality PVC panels',
     'Competitive pricing',

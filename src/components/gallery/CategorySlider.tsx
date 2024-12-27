@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y } from 'swiper/modules';
 import { CategoryData } from '../../types/gallery';
 import { GalleryItem } from './GalleryItem';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -29,21 +30,29 @@ export const CategorySlider = ({ category, isActive }: CategorySliderProps) => {
       >
         {category.title}
       </h2>
-      <div className="relative">
-        {/* Scoped Navigation Buttons */}
+      <div className="relative group">
+        {/* Navigation Buttons */}
         <button
-          style={{ fontSize: '4rem',justifyContent:'center' }}
-          className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-white p-3 rounded-full shadow-md transition ${prevButtonClass}`}
+          className={`${prevButtonClass} absolute left-4 top-1/2 transform -translate-y-1/2 z-10 
+            w-10 h-10 flex items-center justify-center rounded-full
+            bg-white/80 backdrop-blur-sm shadow-lg border border-gray-200
+            text-gray-700 hover:bg-white hover:text-primary
+            transition-all duration-300 opacity-0 group-hover:opacity-100
+            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`}
           aria-label="Previous slide"
         >
-          &#8249;
+          <ChevronLeft className="w-6 h-6" />
         </button>
         <button
-         style={{ fontSize: '4rem', alignContent:'center'}}
-          className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary text-white p-3 rounded-full shadow-md transition ${nextButtonClass}`}
+          className={`${nextButtonClass} absolute right-4 top-1/2 transform -translate-y-1/2 z-10
+            w-10 h-10 flex items-center justify-center rounded-full
+            bg-white/80 backdrop-blur-sm shadow-lg border border-gray-200
+            text-gray-700 hover:bg-white hover:text-primary
+            transition-all duration-300 opacity-0 group-hover:opacity-100
+            focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`}
           aria-label="Next slide"
         >
-          &#8250;
+          <ChevronRight className="w-6 h-6" />
         </button>
 
         <Swiper
@@ -55,6 +64,8 @@ export const CategorySlider = ({ category, isActive }: CategorySliderProps) => {
           pagination={{
             clickable: true,
             bulletElement: 'button',
+            bulletClass: 'swiper-pagination-bullet !w-2 !h-2 !bg-gray-300 !opacity-70',
+            bulletActiveClass: '!bg-primary !opacity-100',
             renderBullet: (index, className) => {
               return `<button class="${className}" aria-label="Go to slide ${index + 1}"></button>`;
             },
