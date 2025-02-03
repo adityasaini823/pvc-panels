@@ -1,5 +1,5 @@
-import React from 'react';
-import { Droplets, Home, Factory, Warehouse, Blinds, Component, BrickWallIcon} from 'lucide-react';
+
+import {  Home, Factory, Warehouse, Blinds, Component, BrickWallIcon} from 'lucide-react';
 
 export const Services = () => {
   const services = [

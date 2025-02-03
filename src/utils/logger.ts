@@ -1,5 +1,3 @@
-type LogLevel = 'info' | 'warn' | 'error';
-
 export const logger = {
   info: (message: string, data?: any) => {
     if (process.env.NODE_ENV !== 'production') {

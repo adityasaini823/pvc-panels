@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ReactPlayer from 'react-player/lazy'; // Use lazy loading for ReactPlayer
 import { GalleryItem as GalleryItemType } from '../../types/gallery';
 

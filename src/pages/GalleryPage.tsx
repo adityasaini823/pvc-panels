@@ -1,16 +1,21 @@
-import React, { useEffect, Suspense } from 'react';
+import { useEffect, Suspense } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { SEOHelmet } from '../components/SEOHelmet';
 import { LoadingSpinner } from '../components/LoadingSpinner';
 import { CategorySlider } from '../components/gallery/CategorySlider';
 import { GalleryNav } from '../components/gallery/GalleryNav';
-import { galleryData, GalleryCategory } from '../data/galleryData';
+import { galleryData } from '../data/galleryData';
+
+// Define GalleryCategory as a union of string literals
+export type GalleryCategory = 'ceiling' | 'kitchen' | 'walls' | 'tiles' | 'tv-units';
 
 export const GalleryPage = () => {
+  // Explicitly type the `category` parameter as `string | undefined`
   const { category } = useParams<{ category: string }>();
   const navigate = useNavigate();
   const categories = Object.values(galleryData);
-  
+
+  // Type predicate to check if the category is valid
   const isValidCategory = (cat: string | undefined): cat is GalleryCategory => {
     return cat !== undefined && cat in galleryData;
   };

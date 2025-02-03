@@ -1,4 +1,3 @@
-import React from 'react';
 import { SEOHelmet } from '../components/SEOHelmet';
 import { Hero } from '../components/Hero';
 import { About } from '../components/About';

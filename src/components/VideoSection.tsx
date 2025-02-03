@@ -1,4 +1,4 @@
-import React from 'react';
+
 import ReactPlayer from 'react-player';
 import { useInView } from 'react-intersection-observer';
 

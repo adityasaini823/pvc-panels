@@ -15,13 +15,15 @@ export const Contact = () => {
               process.env.REACT_APP_EMAILJS_PUBLIC_KEY!  // Replace with your EmailJS Public Key
             )
             .then(
-                (result) => {
-                    alert('Email sent successfully!');
-                },
-                (error) => {
-                    alert('Failed to send email. Please try again.');
-                }
-            );
+              (result) => {
+                console.log(result); // Use the result if necessary
+                alert('Email sent successfully!');
+              },
+              (error) => {
+                console.error(error); // Use the error if necessary
+                alert('Failed to send email. Please try again.');
+              }
+            );            
   };
   const handleChange = (e:any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
